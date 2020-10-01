@@ -1,0 +1,34 @@
+<!--This is the index.ejs which contains the page design of the login page with simple bootstrap-->
+<html>
+  <head>
+    <!--Title of the page-->
+    <title>Node Authentication</title>
+
+    <!--Internal style sheets-->
+    <link
+      rel="stylesheet"
+      href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        padding-top: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron text-center">
+        <h1><span class="fa fa-lock"></span>Node Google Drive Upload</h1>
+        <p>Login or Register with:</p>
+        <!--The passed URL from the app.js is reffering in href attribute-->
+        <a href="<%=url%>" class="btn btn-danger"
+          ><span class="fa fa-google-plus"></span> Google
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
